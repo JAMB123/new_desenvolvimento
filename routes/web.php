@@ -19,9 +19,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/index', function () {
-    return view('sistema.index');
-});
+Route::get('/index', [App\Http\Controllers\animalController::class, 'index'])->name('index');
 
 Route::get('/sobre', function () {
     return view('sistema.sobre');

@@ -19,9 +19,18 @@ class User extends Authenticatable
      */
     protected $fillable = [
         'name',
+        'username',
+        'sobrename',
         'email',
+        'telefone',
+        'CPF',
+        'endereco',
         'password',
+        
     ];
+    public function AnimalUser(){
+        return $this->hasMany('App/Models/AnimalUser', 'user_id');
+    }
 
     /**
      * The attributes that should be hidden for serialization.
@@ -29,7 +38,6 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $hidden = [
-        'password',
         'remember_token',
     ];
 

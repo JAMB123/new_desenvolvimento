@@ -4,7 +4,7 @@
         <div class="collapse navbar-collapse justify-content-end" id="conteudoNavbarSuportado">
             <ul class="navbar-nav mr-auto flex-column flex-sm-row">
             </ul>
-            <a href="/index">
+            <a href="{{route('index')}}">
                     <button class="btn my-2 my-sm-0"; id = "botaoo" type="submit" style="margin-right: 15px; margin-left: 15px">Página inicial</button>
                    </a>
             <a href="{{route('login')}}">
