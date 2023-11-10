@@ -36,6 +36,5 @@ Route::post('/cadastros', [App\Http\Controllers\ControladorAnimal::class, 'store
 //Rotas Favoritos
 Route::get('/favoritos/{id}', [App\Http\Controllers\homeController::class, 'favoritos'])->name('favoritos');
 
-Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
