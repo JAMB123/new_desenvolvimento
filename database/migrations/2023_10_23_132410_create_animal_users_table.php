@@ -14,11 +14,10 @@ return new class extends Migration
         Schema::create('animal_users', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('animal_id');
-            $table->foreign('animal_id')->references('id')->on('animal');
+            $table->foreign('animal_id')->references('id')->on('animals');
             $table->unsignedBigInteger('user_id');
-            $table->foreign('user_id')->references('id')->on('eventos');
+            $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
-            $table->unique(['animal_id', 'user_id']);
         });
     }
 

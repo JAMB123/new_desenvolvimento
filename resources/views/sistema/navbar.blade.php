@@ -24,12 +24,14 @@
         <a href="{{route('register')}}">
             <button class="btn my-2 my-sm-0"; id = "botaoo" type="submit" style="margin-right: 15px; margin-left: 15px">Cadastrar</button>
         </a>
-        <a href="/favoritos">
+        @auth
+        <a href="/favoritos/">
           <button class="btn my-2 my-sm-0"; id= "botaoo" type="submit" style="margin-right: 15px">Favoritos</button>
         </a>
-        <a href="/cadastros/cadastrar">
+        <a href="/cadastros/cadastrar/">
                 <button class="btn my-2 my-sm-0"; id= "botaoo" type="submit" style="margin-right: 15px; margin-left: 15px">Cadastrar Animal</button>
                </a>
+        @endif
         <a href="/sobre">
                 <button class="btn my-2 my-sm-0"; id= "botaoo" type="submit" style="margin-right: 15px; margin-left: 15px">Sobre nós</button>
                </a>

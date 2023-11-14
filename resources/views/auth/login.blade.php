@@ -5,7 +5,7 @@
 
     <div class="row">
         <div class="col-sm-5">
-            <img src="{{asset('storage/imagens/coleira.png')}}" style="width: 950px" />
+            <img src="{{asset('storage/imagens/coleira.png')}}" style="width: 150%; height: 110%" />
         </div>
         <div class="col-sm-7">
             <div class="container">
@@ -84,7 +84,7 @@
                             </div>
                         </div>
 
-                            <div class="h5 text-center">
+                            <div class="h5 text-center" style="margin-left: 50px">
                                 <p style="color: black" id="titulo"><b>Ainda não tem uma conta? <a style="color: black;" href="{{route('register')}}">Cadastre-se</a></b></p>
                             </div>
 

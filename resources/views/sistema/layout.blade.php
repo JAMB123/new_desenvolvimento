@@ -18,6 +18,8 @@
             @yield('content')
         @endif
     </main>
+    @hasSection('javascript')
     
+    @endif
 </body>
 </html>

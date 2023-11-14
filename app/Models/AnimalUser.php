@@ -4,6 +4,8 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\Animal;
+use App\Models\User;
 
 class AnimalUser extends Model
 {
@@ -15,10 +17,10 @@ class AnimalUser extends Model
     ];
 
     public function animal(){
-        return $this->belongsTo('App/Models/Animal');
+        return $this->belongsTo('App\Models\Animal');
     }
 
     public function user(){
-        return $this->belongsTo('App/Models/User');
+        return $this->belongsTo('App\Models\User');
     }
 }

@@ -20,6 +20,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/index', [App\Http\Controllers\animalController::class, 'index'])->name('index');
+Route::get('/favoritar/{id}', [App\Http\Controllers\animalController::class, 'favoritar']);
+Route::get('/favoritos', [App\Http\Controllers\animalController::class, 'favoritos'])->name('favoritos');
 
 Route::get('/sobre', function () {
     return view('sistema.sobre');
@@ -34,7 +36,7 @@ Route::get('/cadastros/cadastrar', [App\Http\Controllers\ControladorAnimal::clas
 Route::post('/cadastros', [App\Http\Controllers\ControladorAnimal::class, 'store'])->name('gravaNovoCadastro');
 
 //Rotas Favoritos
-Route::get('/favoritos/{id}', [App\Http\Controllers\homeController::class, 'favoritos'])->name('favoritos');
+
 
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

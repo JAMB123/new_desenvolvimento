@@ -20,6 +20,8 @@ return new class extends Migration
             $table->string('sexo');
             $table->string('porte');
             $table->string('sobre');
+            $table->unsignedBigInteger('user_id');
+            $table->foreign('user_id')->references('id')->on('users');
             $table->string('arquivo');
             $table->timestamps();
         });

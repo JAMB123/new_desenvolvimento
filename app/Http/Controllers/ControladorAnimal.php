@@ -39,6 +39,7 @@ class ControladorAnimal extends Controller
         $data -> sexo = $request -> input ('sexo');
         $data -> porte = $request -> input ('porte');
         $data -> sobre = $request -> input ('sobre');
+        $data -> user_id = $request -> input ('user_id');
         $data -> arquivo = $path;
         $data -> save();
         return redirect('/cadastros/lista')->with('success', 'Animal cadastrado com sucesso');

@@ -40,7 +40,7 @@
                 <option value="Gato">Gato</option>
                 <option value="Pássaro">Pássaro</option>
             </select></td>
-            </tr>home
+            </tr>
             <tr>
                 <td colspan="2">
                     <label for="raca">Raça:</label>
@@ -92,7 +92,7 @@
             <td><img src="{{asset('storage/imagens/pata.png')}}" /></td>
             <td><input type="file" name="arquivo" id="arquivo"></td>
             </tr>
-            <input type="hidden" name="id" id="id" value="{{$data['id']}}">
+            <input type="hidden" name="user_id" value="{{Auth::User()->id}}">
             <tr>
             <td colspan="2">
                 <td><a href="/">
