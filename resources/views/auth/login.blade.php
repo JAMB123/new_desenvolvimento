@@ -8,7 +8,7 @@
             <img src="{{asset('storage/imagens/coleira.png')}}" style="width: 150%; height: 110%" />
         </div>
         <div class="col-sm-7">
-            <div class="container">
+            <div class="container" style="margin-left: 110px">
             <p class="h4 text-center" style="color: #2B1998; margin-top: 75px; font-size: 70px"><b>Login</b></p>
             <form method="POST" action="{{ route('login') }}">
                 @csrf

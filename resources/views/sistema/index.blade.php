@@ -69,12 +69,14 @@
                                 <div class="modal-dialog">
                                   <div class="modal-content">
                                     <div class="modal-header">
-                                      <h1 class="modal-title fs-5" id="exampleModalLabel">Dados do doador</h1>
+                                      <h5 class="modal-title fs-5" style="justfycontent: center; margin-left: 165px"id="exampleModalLabel">Dados do doador</h5>
                                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
-                                    <p>Nome:</p><p>{{ $value['nomeUsuario'] }}</p>
-                                    <p>E-mail:</p><p>{{ $value['email'] }}</p>
-                                    <p>Telefone:</p><p>{{ $value['telefone'] }}</p>
+                                    <div class="Dados" style="justfycontent: center">
+                                        <h5>Nome:</p><p>{{ $value['nomeUsuario'] }}</h5>
+                                        <h5>E-mail:</p><p>{{ $value['email'] }}</h5>
+                                        <h5>Telefone:</p><p>{{ $value['telefone'] }}</h5>
+                                    </div>
                                   </div>
                                 </div>
                             </div>
