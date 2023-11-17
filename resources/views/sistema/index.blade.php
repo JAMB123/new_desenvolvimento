@@ -49,9 +49,8 @@
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="btn-group" id="botaonfv">
                                                 @auth
-                                                    <button onclick="window.location.href='/favoritos';"
-                                                        style="color: #ffffff; background-color: ##2B1998; font-size: 18px"
-                                                        type="button" class="btn btn-sm btn-outline">Quero Adotar</button>
+                                                    <button style="color: #ffffff; background-color: ##2B1998; font-size: 18px"
+                                                            type="button" class="btn btn-sm btn-outline" data-bs-toggle="modal" data-bs-target="#exampleModal{{$value['id']}}">Quero Adotar</button>
                                                 </div>
                                                 <div class="btn-group" id="botaofav">
                                                     <a href="/favoritar/{{ $value->id }}">
@@ -66,12 +65,23 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="modal fade" id="exampleModal{{$value['id']}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h1 class="modal-title fs-5" id="exampleModalLabel">Dados do doador</h1>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <p>Nome:</p><p>{{ $value['nomeUsuario'] }}</p>
+                                    <p>E-mail:</p><p>{{ $value['email'] }}</p>
+                                    <p>Telefone:</p><p>{{ $value['telefone'] }}</p>
+                                  </div>
+                                </div>
+                            </div>
                         @endforeach
                     </div>
-
                 </div>
             </div>
-
         @endif
     </div>
 @endsection

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Animal;
 use App\Models\AnimalUser;
+use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 
 class animalController extends Controller
@@ -12,6 +13,12 @@ class animalController extends Controller
     public function index()
     {
         $cadastro = Animal::all();
+        foreach($cadastro as $animal){
+            $usuario = User::where('id', '=', $animal->user_id)->get();
+            $animal['nomeUsuario'] = $usuario[0]->name;
+            $animal['email'] = $usuario[0]->email;
+            $animal['telefone'] = $usuario[0]->telefone;
+        }
         return view('sistema.index', compact('cadastro'));
     }
 
