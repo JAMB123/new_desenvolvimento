@@ -47,6 +47,12 @@ class animalController extends Controller
     public function favoritos()
     {
         $cadastro = AnimalUser::where('user_id', '=', Auth::User()->id)->get();
+        foreach($cadastro as $animal){
+            $usuario = User::where('id', '=', $animal->user_id)->get();
+            $animal['nomeUsuario'] = $usuario[0]->name;
+            $animal['email'] = $usuario[0]->email;
+            $animal['telefone'] = $usuario[0]->telefone;
+        }
         return view('sistema.favoritos', compact('cadastro'));
     }
 }

@@ -11,9 +11,6 @@
                 Para adotar, basta clicar no botão de “Quero adotar” que o contato do doador estará 
                 a mostra para entrar em contato.</b></p>
         </div>
-        <div class="col-sm-4" style="position:relative">
-            <img src="{{asset('storage/imagens/animais.png')}}" style="margin-top: 190px; margin-right: 300px; width; 600px; height: 600px" />
-        </div>
         <div style="">
         </div>
     </div>
