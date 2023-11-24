@@ -12,8 +12,7 @@
         </div>
         <p class="h1 text-start" style=" font-size: 23px;">Nesta seção você tem acesso aos animais que ainda estão esperando
             por um lar!
-            Para cadastrar um animal que também está a procura de um lar ou saber mais sobre como funcionam as adoções
-            escolha uma das opções abaixo:
+            O animalzinho que você procura para alegrar sua família está aqui, só esperando pela chance de te fazer (mais) feliz!
             Ao adotar um bichinho, você estará salvando ele das ruas.
         </p>
         <p class="h1 text-start"

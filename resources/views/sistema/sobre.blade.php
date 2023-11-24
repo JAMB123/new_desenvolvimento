@@ -5,14 +5,15 @@
 
     <div class="row">
         <div class="col-sm-7">
-            <img src="{{asset('storage/imagens/sobreadoc.png')}}" style="width: 1000px" />
+            <img src="{{asset('storage/imagens/sobreadoc.png')}}" style="width: 700px" />
         </div>
         <div class="col-sm-5" id="sobre">
             <div class="container">
-                <p class="h4 text-center" style="color: #2B1998; margin-top: 75px; font-size: 70px"><b>Sobre as adoções</b></p>
-                <p class="h1 text-start" style=" font-size: 30px; margin-left: 30px">O website JAMB é destinado para usuários que estão em busca de um novo companheiro.</p>
-                <br>
-                <p class="h1 text-start" style=" font-size: 40px; margin-left: 30px">O site possui uma seção para anunciar os pets que estão a espera de um lar. Caso você clique na imagem do animal, é apresentada mais informações sobre ele, além das suas características. Para adotar, basta clicar no botão de “Quero adotar” que o contato do doador estará a mostra para entrar em contato.</p>
+                <p class="h4 text-center" style="color: #2B1998; margin-top: 75px; font-size: 70px"><b>Sobre a causa</b></p>
+                <p class="h1 text-start" style=" font-size: 40px; margin-left: 30px">
+            
+O CEPETZ É UM PROJETO DE EXTENSÃO DO CEFET- MG, FORMADO POR ALUNOS E FUNCIONÁRIOS VOLUNTÁRIOS, QUE SURGIU, INICIALMENTE, NO CAMPUS X, QUE ESTÁ LOCALIZADO NA CIDADE DE CURVELO, COM O OBJETIVO DE DAR ASSISTÊNCIA AOS ANIMAIS QUE ERAM ABANDONADOS NO CAMPUS E SENSIBILIZAR E CONSCIENTIZAR A COMUNIDADE EM RELAÇÃO AO ABANDONO DE ANIMAIS, PREZANDO SEMPRE PELA ÉTICA E RESPONSABILIDADE SOCIAL.
+</p>
 
             </div>
         </div>

@@ -8,10 +8,7 @@
             <p class="h3 text-start" style="color: #656AA6; font-size: 50px;   font-style: Italic; align-Items: center "></p>
             
         </div>
-        <p class="h1 text-start" style=" font-size: 20px;">Nesta seção você tem acesso aos animais que ainda estão esperando por um lar!
-                Para cadastrar um animal que também está a procura de um lar ou saber mais sobre como funcionam as adoções escolha uma das opções abaixo:
-                Ao adotar um bichinho, você estará salvando ele das ruas. 
-            </p>
+        <p class="h1 text-start" style=" font-size: 20px;">Nesta seção você poderá cadastrar um animal que necessita de uma adoção, ao clicar no botão "Novo pet" você inicia sua jornada como doador de animais.
 
     <div class="album py-5 bg-light" >
         <div class="container">

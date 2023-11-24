@@ -29,7 +29,7 @@
             </a>
             <a href="{{ route('register') }}">
                 <button class="btn my-2 my-sm-0"; id = "botaoo" type="submit"
-                    style="margin-right: 15px; margin-left: 15px">Cadastrar</button>
+                    style="margin-right: 15px; margin-left: 15px">Cadastre-se</button>
             </a>
             @endif
             @auth
